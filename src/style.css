@@ -1,0 +1,176 @@
+
+/* Estilos CSS para la barra de navegación */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: hsl(0, 0%, 98%);
+    overflow: hidden;
+}
+
+.navbar a.snap {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: hsl(0, 0%, 8%);
+    background-color: inherit;
+    margin: 0;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.login-register {
+    float: right;
+}
+
+.login-register button.register {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.login-register button.login {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.imagen-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-right: 5cm;
+    margin-top: -450px;
+    position: relative;
+}
+
+.imagen {
+    max-width: 40%;
+    height: auto;
+}
+
+
+.make {
+    font-size: 75px;
+    font-weight: bold;
+    position: absolute;
+    top: 110px;
+    left: 5cm;
+
+}
+
+.remote-work {
+    font-size: 75px;
+    font-weight: bold;
+    position: absolute;
+    top: 167px;
+    left: 5cm;
+}
+
+.texto-container {
+    position: absolute;
+    top: 370px;
+    left: 5cm;
+    width: 460px;
+}
+
+.texto {
+    font-size: 16px;
+}
+
+.boton-learn-more {
+    text-align: left;
+    margin-top: 420px;
+
+    padding-left: 5cm;
+}
+
+.boton {
+    padding: 8px 16px;
+    background-color: white;
+    color: black;
+    padding: 2px 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+.boton:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+
+
+}
+
+.svg-container {
+    display: flex;
+
+    margin-top: 40px;
+    margin-left: 4.5cm;
+}
