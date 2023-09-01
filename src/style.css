@@ -180,6 +180,10 @@ body {
     display: inline-block;
 }
 
+.image-spacing {
+    margin-right: 50px; /* Ajusta el valor según el espacio que desees entre las imágenes */
+}
+
 /* responsivo */
 /*movil*/
 @media screen and (max-width: 768px) {
