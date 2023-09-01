@@ -14,14 +14,6 @@ body {
     padding: 10px 20px; 
 }
 
-.navbar a.snap {
-    font-size: 16px;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 14px 8px; 
-}
 
 .navbar a {
     font-size: 16px;
@@ -170,14 +162,29 @@ body {
     margin-left: 190px;
 }
 .navbar-logo {
-    margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+    margin-right: 10px;
+}
+.down-arrow {
+    display: inline-block;
+}
+
+.up-arrow {
+    display: none;
+}
+
+#Dropdown:hover .down-arrow {
+    display: none;
+}
+
+#Dropdown:hover .up-arrow {
+    display: inline-block;
 }
 
 /* responsivo */
 /*movil*/
 @media screen and (max-width: 768px) {
     .imagen-container {
-        margin-top:0; /* Cambia el margen superior para evitar superposiciones en pantallas más pequeñas */
+        margin-top:0; 
     }
    
 }
@@ -187,21 +194,10 @@ body {
     body {
         background-color: hsl(0, 0%, 98%);
     }
-    imagen-container {
-        margin-top: 0; /* Cambia el margen superior para evitar superposiciones en pantallas más pequeñas */
+    .imagen-container {
+        margin-top: 0; 
     }
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar a,
-    .dropdown .dropbtn {
-        padding: 10px; /* Reducir el espaciado en dispositivos móviles */
-        margin: 5px 0;
-    }
-
-
+   
 }
 
 /* pc */
@@ -210,8 +206,8 @@ body {
     body {
         background-color: hsl(0, 0%, 98%);
     }
-    imagen-container {
-        margin-top: 10; /* Cambia el margen superior para evitar superposiciones en pantallas más pequeñas */
+    .imagen-container {
+        margin-top: 10; 
     }
 
 }
