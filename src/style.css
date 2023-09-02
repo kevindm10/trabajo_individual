@@ -1,16 +1,14 @@
 /* Estilos CSS para la barra de navegación */
 body {
-    font-family: Arial, sans-serif; /* Fuente predeterminada para el cuerpo de la página */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-
 /* Contenedor principal de la barra de navegación */
 .navbar-container {
     display: flex;
-    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    align-items: center; 
 }
-
 /* Barra de navegación */
 .navbar {
     background-color: hsl(0, 0%, 98%);
@@ -18,12 +16,11 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    flex-grow: 1; /* Expande la barra de navegación para llenar el espacio disponible */
+    flex-grow: 1; 
 }
-
 /* Logo en la barra de navegación */
 .navbar-logo {
-    margin-right: 20px; /* Espacio entre el logo y el navbar, ajusta según tus necesidades */
+    margin-right: 20px; 
 }
 
 /* Enlaces en la barra de navegación */
@@ -32,14 +29,12 @@ body {
     color: black;
     text-align: center;
     text-decoration: none;
-    padding: 14px 8px;
+    padding: 14px 8px; 
 }
-
 /* Menú desplegable */
 .dropdown {
     position: relative;
 }
-
 /* Botón del menú desplegable */
 .dropdown .dropbtn {
     font-size: 16px;
@@ -51,13 +46,11 @@ body {
     cursor: pointer;
 }
 
-/* Cambio de color al pasar el cursor sobre enlaces y el botón del menú desplegable */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
     background-color: #ddd;
     color: black;
 }
-
 /* Contenido del menú desplegable */
 .dropdown-content {
     display: none;
@@ -66,9 +59,8 @@ body {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    top: 100%;
+    top: 100%; 
 }
-
 /* Estilos para los elementos en el menú desplegable */
 .dropdown-content a {
     color: black;
@@ -77,18 +69,16 @@ body {
     display: block;
     text-align: left;
 }
-
 /* Mostrar el menú desplegable al pasar el cursor sobre él */
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 /* Contenedor para botones de registro e inicio de sesión */
 .login-register {
     display: flex;
-    align-items: center;
+    align-items: center; 
 }
-
 /* Estilos para el botón de registro */
 .login-register button.register,
 .login-register button.login {
@@ -99,7 +89,6 @@ body {
     border-radius: 20px;
     cursor: pointer;
 }
-
 /* Estilos para el botón de inicio de sesión */
 .login-register button.login {
     background-color: white;
@@ -119,14 +108,14 @@ body {
     position: relative;
     flex-wrap: wrap;
 }
-
 /* Estilos para las imágenes */
 .imagen {
     max-width: 40%;
     height: auto;
+ 
 }
 
-/* Estilos para el texto y los botones */
+/* Estilos para los elementos de texto y botones */
 .make {
     font-size: 75px;
     font-weight: bold;
@@ -153,8 +142,7 @@ body {
 .texto {
     font-size: 16px;
 }
-
-/* Estilos para el botón "Learn More" */
+/* Estilos para el botón Learn More */
 .boton-learn-more {
     text-align: left;
     margin-top: 420px;
@@ -172,7 +160,6 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
-
 /* Cambio de color al pasar el cursor sobre el botón */
 .boton:hover {
     background-color: black;
@@ -180,43 +167,59 @@ body {
     text-decoration: none;
 }
 
-/* Estilos para el contenedor de SVG */
+/* Estilos para contenedor de SVG */
 .svg-container {
     display: flex;
     margin-top: 40px;
     margin-left: 190px;
     position: absolute;
 }
+.navbar-logo {
+    margin-right: 10px;
+}
+.down-arrow {
+    display: inline-block;
+}
 
-/* Margen derecho para separar las imágenes en el contenedor de SVG */
+.up-arrow {
+    display: none;
+}
+
+#Dropdown:hover .down-arrow {
+    display: none;
+}
+
+#Dropdown:hover .up-arrow {
+    display: inline-block;
+}
+
 .image-spacing {
     margin-right: 50px; /* Ajusta el valor según el espacio que desees entre las imágenes */
 }
 
-/* Responsivo - Estilos para pantallas pequeñas (móviles) */
+/* responsivo */
+/*movil*/
 @media screen and (max-width: 768px) {
     /* Contenedor de imágenes en pantalla móvil */
-    .imagen-containermov {
+   .imagen-containermov {
         display: block;
         text-align: center;
-        margin: 110px auto;
-        width: 100%;
+        margin: 110px auto; 
+        width: 100%; 
         position: absolute;
-        top: 0;
+        top: 0; 
     }
-
-    /* Estilos para imágenes en pantalla móvil */
+ /* Estilos para imágenes en pantalla móvil */
     .imagenmov {
         max-width: 100%;
         height: auto;
     }
 
-    /* Ocultar el contenedor de imágenes en pantalla móvil */
+   /* Ocultar el contenedor de imágenes en pantalla móvil */
     .imagen-container {
         display: none;
     }
-
-    /* Icono de menú móvil */
+   /* Icono de menú móvil */
     .mobile-menu-icon {
         display: block;
         position: absolute;
@@ -229,66 +232,59 @@ body {
         width: 30px;
         height: auto;
     }
-
-    /* Estilos para la barra de navegación en pantalla móvil */
+  /* Estilos para la barra de navegación en pantalla móvil */
     .navbar {
-        display: relative;
+        display: relative; 
         position: absolute;
         top: 0;
         right: 0;
-        background-color: #fff;
+        background-color: #fff; 
         flex-direction: column;
         align-items: flex-start;
-        z-index: 2;
+        z-index: 2; 
     }
 
-    /* Estilos para enlaces en la barra de navegación en pantalla móvil */
     .navbar a {
         display: block;
         padding: 10px 20px;
         text-align: left;
     }
-
-    /* Cambio de color al pasar el cursor sobre enlaces en pantalla móvil */
+/* Cambio de color al pasar el cursor sobre enlaces en pantalla móvil */
     .navbar a:hover {
         background-color: #ccc;
     }
 
-    /* Mostrar el menú desplegable en pantalla móvil */
     .dropdown {
         display: block;
     }
-
-    /* Ajustes de estilo para elementos en pantalla móvil */
     .make,
     .remote-work {
         margin-top: 500px; /* Ajusta según sea necesario */
-        white-space: nowrap;
+        white-space: nowrap; 
     }
-
-    .texto-container {
+    .texto-container{
         margin-top: 400px;
+      
     }
-
-    .svg-container {
+    .svg-container{
         margin-top: 20px;
     }
-
-    /* Ajuste de estilo para el botón "Learn More" en pantalla móvil */
-    .boton-learn-more {
-        margin-top: 820px;
-    }
+     /* Ajuste de estilo para el botón Learn More en pantalla móvil */
+    .boton-learn-more{
+       
+        margin-top: 820px ; 
+}
 }
 
-/* Responsivo - Estilos para pantallas grandes (PC) */
-@media screen and (min-width: 769px) {
-    /* Ocultar el contenedor de imágenes en pantallas grandes */
-    .imagen-containermov {
+
+/* pc */
+
+@media screen and (min-width:769px) {
+
+   .imagen-containermov  {
         display: none;
     }
-
-    /* Mostrar la barra de navegación en pantallas grandes */
     .navbar {
-        display: flex;
+        display: flex; 
     }
 }
