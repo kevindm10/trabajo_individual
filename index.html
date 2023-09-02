@@ -5,75 +5,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu Página</title>
+    
     <link rel="stylesheet" type="text/css" href="src\style.css">
+   
     <script src="js\main.js"></script>
 </head>
 
 <body>
-    
+    <!-- Contenedor principal de la barra de navegación -->
     <div class="navbar-container">
-    <a href="#" class="navbar-logo">
-        <img src="img\logo.svg" alt="logo" class="arrow.up-arrow">
-    </a>
-    <div class="navbar">
-      
-        <div class="dropdown" id="Dropdown">
-            <button class="dropbtn" id="featuresButton">
-                Features
-                <img src="img/icon-arrow-down.svg" alt="abajo" class="down-arrow">
-                <img src="img/icon-arrow-up.svg" alt="arriba" class="up-arrow">
-            </button>
-            <div class="dropdown-content">
-                <a href="#">
-                    <img src="img/icon-todo.svg" alt="lista" class="feature-icon">
-                    Todo List
-                </a>
-                <a href="#">
-                    <img src="img/icon-calendar.svg" alt="calendario" class="feature-icon">
-                    Calendar
-                </a>
-                <a href="#">
-                    <img src="img/icon-reminders.svg" alt="reminders" class="feature-icon">
-                    Reminders
-                </a>
-                <a href="#">
-                    <img src="img/icon-planning.svg" alt="planning" class="feature-icon">
-                    Planning
-                </a>
+        <!-- Logo en la barra de navegación -->
+        <a href="#" class="navbar-logo">
+            <img src="img\logo.svg" alt="logo" class="arrow.up-arrow">
+        </a>
+        <!-- Barra de navegación -->
+        <div class="navbar">
+            <!-- Menú desplegable Features-->
+            <div class="dropdown" id="Dropdown">
+                <button class="dropbtn" id="featuresButton">
+                    Features
+                    <!-- Iconos de flecha para el menú desplegable -->
+                    <img src="img/icon-arrow-down.svg" alt="abajo" class="down-arrow">
+                    <img src="img/icon-arrow-up.svg" alt="arriba" class="up-arrow">
+                </button>
+                <!-- Contenido del menú desplegable Features -->
+                <div class="dropdown-content">
+                    <a href="#">
+                        <img src="img/icon-todo.svg" alt="lista" class="feature-icon">
+                        Todo List
+                    </a>
+                    <a href="#">
+                        <img src="img/icon-calendar.svg" alt="calendario" class="feature-icon">
+                        Calendar
+                    </a>
+                    <a href="#">
+                        <img src="img/icon-reminders.svg" alt="reminders" class="feature-icon">
+                        Reminders
+                    </a>
+                    <a href="#">
+                        <img src="img/icon-planning.svg" alt="planning" class="feature-icon">
+                        Planning
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="dropdown" id="Dropdown">
-            <button class="dropbtn" id="companyButton">
-                Company
-                <img src="img/icon-arrow-down.svg" alt="abajo" class="down-arrow">
-                <img src="img/icon-arrow-up.svg" alt="arriba" class="up-arrow">
-            </button>
-            <div class="dropdown-content">
-                <a href="#">History</a>
-                <a href="#">Our team</a>
-                <a href="#">Blog</a>
+            <!-- Menú desplegable Company -->
+            <div class="dropdown" id="Dropdown">
+                <button class="dropbtn" id="companyButton">
+                    Company
+                    <!-- Iconos de flecha para el menú desplegable -->
+                    <img src="img/icon-arrow-down.svg" alt="abajo" class="down-arrow">
+                    <img src="img/icon-arrow-up.svg" alt="arriba" class="up-arrow">
+                </button>
+                <!-- Contenido del menú desplegable Company -->
+                <div class="dropdown-content">
+                    <a href="#">History</a>
+                    <a href="#">Our team</a>
+                    <a href="#">Blog</a>
+                </div>
             </div>
-        </div>
-        <a href="#">Careers</a>
-        <a href="#">About</a>
-        <div class="login-register">
-            <button class="login">Login</button>
-            <button class="register">Register</button>
+            <!-- Enlaces en la barra de navegación -->
+            <a href="#">Careers</a>
+            <a href="#">About</a>
+            <!-- Contenedor para botones de inicio de sesión y registro -->
+            <div class="login-register">
+                <button class="login">Login</button>
+                <button class="register">Register</button>
+            </div>
         </div>
     </div>
-</div>
 
+    <!-- Título Make -->
     <p class="make">Make</p>
+    <!-- Título remote work -->
     <p class="remote-work">remote work</p>
+    <!-- Contenedor de texto -->
     <div class="texto-container">
         <p class="texto">Get your team in sync no matter your location. Streamline processes, create team rituals, and
             watch productivity soar.</p>
     </div>
+    <!-- Botón Learn more -->
     <div class="boton-learn-more">
         <a href="#" class="boton">Learn more</a>
     </div>
 
-    
+    <!-- Contenedor de imágenes SVG -->
     <div class="svg-container">
         <img src="img/client-databiz.svg" alt="data">
         <span class="image-spacing"></span>
@@ -83,16 +98,18 @@
         <span class="image-spacing"></span>
         <img src="img/client-maker.svg" alt="maker">
     </div>
+
+    <!-- Contenedor de imagen principal -->
     <div class="imagen-container">
         <img src="img\image-hero-desktop.png" alt="Tu Imagen" class="imagen">
     </div>
+    <!-- Contenedor de imagen para dispositivos móviles -->
     <div class="imagen-containermov">
         <img src="img\image-hero-mobile.png" alt="imagenmov" class="imagenmov">
     </div>
+    <!-- Icono de menú para dispositivos móviles -->
     <div class="mobile-menu-icon" id="mobileMenuIcon">
         <img src="img/icon-menu.svg" alt="Menú">
-    </div>
-
     </div>
 </body>
 
